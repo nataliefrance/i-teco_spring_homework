@@ -2,8 +2,10 @@ package ru.shipova.iteco_spring_homework.service;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
 import ru.shipova.iteco_spring_homework.model.ExternalInfo;
 
+@Component
 @Slf4j
 public class ExternalInfoProcess implements Process {
 

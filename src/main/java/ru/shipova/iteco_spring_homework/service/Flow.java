@@ -15,11 +15,6 @@ public class Flow {
         this.externalService = externalService;
         this.process = process;
     }
-
-    //Метод run должен вызывать ExternalServiceImpl.getExternalInfo(id),
-    // далее должна быть проверка полученного ExternalInfo:
-    // если info != null, то вызов ExternalInfoProcess.run(ExternalInfo),
-    // иначе логгируем ExternalInfoProcess.getClass().
     public void run(Integer id) {
         ExternalInfo externalInfo = externalService.getExternalInfo(id);
         if (externalInfo.getInfo() != null) {
